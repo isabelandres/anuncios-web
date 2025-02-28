@@ -4,7 +4,7 @@ const docClient = new AWS.DynamoDB.DocumentClient();
 exports.handler = async (event) => {
     const anuncio = JSON.parse(event.body); // Obtener el cuerpo de la solicitud
     const params = {
-        TableName: 'Anuncios',
+        TableName: 'Anuncios_Isa',
         Item: {
             id: Date.now().toString(), // Generar un ID único
             texto: anuncio.texto,

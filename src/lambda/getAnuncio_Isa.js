@@ -4,7 +4,7 @@ const docClient = new AWS.DynamoDB.DocumentClient();
 exports.handler = async (event) => {
     const anuncioId = event.pathParameters.id; // Obtener el ID del anuncio de los parámetros de la ruta
     const params = {
-        TableName: 'Anuncios',
+        TableName: 'Anuncios_Isa',
         Key: {
             id: anuncioId
         }

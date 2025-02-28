@@ -7,7 +7,7 @@ exports.handler = async (event) => {
 
     // Obtener el anuncio actual
     const getParams = {
-        TableName: 'Anuncios',
+        TableName: 'Anuncios_Isa',
         Key: {
             id: anuncioId
         }

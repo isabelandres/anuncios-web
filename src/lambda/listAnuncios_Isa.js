@@ -3,7 +3,7 @@ const docClient = new AWS.DynamoDB.DocumentClient();
 
 exports.handler = async (event) => {
     const params = {
-        TableName: 'Anuncios' 
+        TableName: 'Anuncios_Isa' 
     };
 
     try {
